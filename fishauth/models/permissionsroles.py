@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, Boolean, ForeignKey, Table
+from sqlalchemy import Column, Integer, DateTime, ForeignKey, Table
 from sqlalchemy import UniqueConstraint
 from sqlalchemy.sql import func
 from fishauth.models.base import Base
