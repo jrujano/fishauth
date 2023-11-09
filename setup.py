@@ -18,7 +18,7 @@ with io.open(os.path.join(this_directory, "README.md"), "r", encoding="utf-8") a
 install_requires = ["SQLAlchemy==2.0.22", "typing_extensions==4.8.0"]
 setup(
     name="fishauth",
-    version="0.1.5",
+    version="0.1.6",
     author="Johan Rujano",
     author_email="johanrujano@gmail.com",
     description="Libraries that have models and methods to handle user authentication",
