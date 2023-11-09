@@ -36,9 +36,11 @@ class User(Base):
     birth_date = Column(Date, nullable=True)
     phone_mobile = Column(String(20), nullable=True)
     avatar = Column(String, nullable=True)
-    is_active = Column(Boolean(), default=True)
+
     uid_firebase = Column(String, nullable=True)
     time_created = Column(DateTime(timezone=True), server_default=func.now())
+    is_superuser = Column(Boolean(), default=False)
+    is_verified = Column(Boolean(), default=False)
     time_updated = Column(DateTime(timezone=True), onupdate=func.now())
 
     organization = relationship("Organization", back_populates="members")
